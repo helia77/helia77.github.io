@@ -1,0 +1,16 @@
+- name: Tehran Polytechnic
+  dates: 2016 - 2021
+  qualification: BSc Electrical Engineering
+  description: | # this will include new lines to allow paragraphs
+    With a minor in Control Systems at [Electrical Engineering Department](https://ee.aut.ac.ir//).
+
+    **Related Courses:**
+    
+    Signal Processing, Probability and Statistics, Linear Algebra, Regression Analysis, Stochastic Processes, Artificial Intelligence, Introduction to Machine Learning, Differential Geometry, Information Theory (Graduate Course).
+    
+- name: Farzanegan II Highschool
+  dates: 2012-2016
+  qualification: Diploma
+  description: |
+    Diploma in Mathematical Physics
+    Affiliated with the National Organization for the Development of Exceptional Talents ([NODET](http://nodet.net/)).

@@ -1,0 +1,21 @@
+  
+- company: University of Houston
+  job_title: Research Assistant
+  dates: August 2022 - Present
+  description: | # this will include new lines to allow paragraphs
+    As part of my Bachelor Thesis, I worked under supervision of [Dr. Soleymani](http://sharif.edu/~soleymani/) on **Graph Learning in Heterogenous Networks**.
+    In this project, I have proposed and implemented a novel Autoencoder approach to efficiently solve the problem of 
+    link prediction in networks with diversity in nodes.
+    
+- company: Tehran Polytechnic
+  job_title: Teaching Assistant
+  description: |
+
+    **September 2017:**
+    + Advance Computer Programming Course
+        Prepared course projects and homework for Python and C++
+        Developed an [[Auto-Grader](https://github.com/helia77/AssingmentGrader)]  for course assignments
+
+
+      
+
