@@ -242,7 +242,6 @@ class Home:
             <h4>Publications</h4>
             <hr/>
             {publications_list}
-            <div class="pb-5">(*, † indicate equal contribution)</div>
           </div>
           <div>
             <h4>Teaching</h4>
@@ -416,44 +415,64 @@ class Project:
       file.write(str(soup))
 
 PEOPLE = {
-  'your-name': Person(
-    name = 'Your Name',
+  'ME': Person(
+    name = 'Helya Goharbavang',
     website = '',
     me = True
   ),
-  'coauthor-name': Person(
-    name = 'Coauthor Name',
+  'Mayerich': Person(
+    name = 'David Mayerich',
     website = ''
   ),
-  'coauthor-name-other': Person(
-    name = 'Coauthor Other',
+  'Meher': Person(
+    name = 'Meher Niger',
+    website = ''
+  ),
+  'Omar': Person(
+    name = 'Omar Baig',
+    website = ''
+  ),
+  'Chen': Person(
+    name = 'Guoning Chen',
+    website = ''
+  ),
+  'Josh': Person(
+    name = 'Joshua D. Wythe',
+    website = ''
+  ),
+  'person1': Person(
+    name = 'Taeyong Ahn',
+    website = ''
+  ),
+  'person2': Person(
+    name = 'Emily K. Alley',
     website = ''
   )
 }
 
 ABOUT_ME = AboutMe(
-  name = 'Your Name',
+  name = 'Helya Goharbavang',
   image = 'data/images/profile.png', 
   resources=[
     Resource(
       icon=FontAwesomeIcons.MAP_MARKER,
-      name='Carnegie Mellon University',
-      path='https://www.cs.cmu.edu'
+      name='University of Houston',
+      path='https://www.ece.uh.edu/'
     ),
     Resource(
       icon=FontAwesomeIcons.ENVELOPE,
-      name='your-email@gmail.com',
-      path='mailto:your-email@gmail.com'
+      name='hgoharba@cougarnet.uh.edu',
+      path='mailto:hgoharba@cougarnet.uh.edu'
     ),
     Resource(
       icon=FontAwesomeIcons.GITHUB,
       name='Github',
-      path='https://github.com'
+      path='https://github.com/helia77'
     ),
     Resource(
       icon=FontAwesomeIcons.GRAD_CAP,
       name='Google Scholar',
-      path='https://scholar.google.com'
+      path='https://scholar.google.com/citations?user=unLxLAYAAAAJ&hl=en'
     ),
     Resource(
       icon=FontAwesomeIcons.FILE,
@@ -463,56 +482,66 @@ ABOUT_ME = AboutMe(
   ]
 )
 
-BIO = '''Add your bio here'''
+BIO = '''I'm a third year Ph.D. student with the <a href="https://stim.ee.uh.edu/">STIM Lab</a> at University of Houston, 
+where I'm advised by Dr. <a href="https://www.ece.uh.edu/faculty/mayerich/">David Mayerich</a>. 
+My work is supported by the NIH Graduate Research Fellowship. I received my B.S. degree in Electrical Engineering 
+with a focus on Control Systems from the Tehran Polytechnic University in 2021. '''
 
 PUBLICATIONS = {
   'pub1': Publication(
-    image =  'data/images/thumbnails/box.png',
-    title =  'Your Project Name 1',
+    image =  'data/images/thumbnails/review.png',
+    title =  'Segmentation and Modeling of Large-Scale Microvascular Networks: A Survey',
     url = 'project/pub1',
     authors =  [
-      PEOPLE['your-name'],
-      PEOPLE['coauthor-name'],
-      PEOPLE['coauthor-name-other']
+      PEOPLE['ME'],
+      PEOPLE['Josh'],
+      PEOPLE['Chen'],
+      PEOPLE['Mayerich']
     ],
-    venue = 'ACM Transactions on Graphics (SIGGRAPH), 2024',
+    venue = 'Manuscript submitted for publication',
   ),
   'pub2': Publication(
-    image =  'data/images/thumbnails/glass.png',
-    title =  'Your Project Name 2',
-    url = 'project/pub1',
+    image =  'data/images/thumbnails/tensorvote.png',
+    title =  'Closed-Form GPU-Accelerated Tensor Voting with Refinement',
+    url = 'project/pub2',
     authors =  [
-      PEOPLE['your-name'],
-      PEOPLE['coauthor-name']
+      PEOPLE['ME'],
+      PEOPLE['Omar'],
+      PEOPLE['Chen'],
+      PEOPLE['Mayerich'],
     ],
-    venue = 'ACM Transactions on Graphics (SIGGRAPH), 2023',
+    venue = 'IEEE International Symposium on Biomedical Imaging (ISBI), 2025',
   ),
   'pub3': Publication(
-    image =  'data/images/thumbnails/cloud.png',
-    title =  'Your Project Name 3',
-    url = 'project/pub1',
+    image =  'data/images/thumbnails/rsf.png',
+    title =  'GPU-Accelerated RSF Level Set Evolution for Large-Scale Microvascular Segmentation',
+    url = 'project/pub3',
     authors =  [
-      PEOPLE['your-name'],
-      PEOPLE['coauthor-name']
+      PEOPLE['ME'],
+      PEOPLE['person1'],
+      PEOPLE['person2'],
+      PEOPLE['Josh'],
+      PEOPLE['Chen'],
+      PEOPLE['Mayerich'],
     ],
-    venue = 'ACM Transactions on Graphics (SIGGRAPH), 2022',
+    venue = 'Manuscript under review',
   )
 }
 
 COURSES = [
   Course(
-    image = 'data/images/thumbnails/class.png',
-    name = 'Course 1',
-    url = 'https://www.cmu.edu',
+    image = 'data/images/thumbnails/spheres.jpg',
+    name = 'GPU and Heterogeneous Programming',
+    url = 'https://stim.ee.uh.edu/education/ece-6397-gpu-programming/',
     role = 'Teaching Assistant',
-    details = 'CMU, Spring 2023, Fall 2024'
+    details = 'UH, Spring 2024'
   ),
   Course(
     image = 'data/images/thumbnails/class.png',
-    name = 'Course 2',
-    url = 'https://www.cmu.edu',
+    name = 'Advanced Computer Programming',
+    url = '',
     role = 'Teaching Assistant',
-    details = 'CMU, Spring 2021'
+    details = 'Tehran Polytechnic, Fall 2017'
   )
 ]
 
