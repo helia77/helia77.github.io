@@ -70,13 +70,13 @@ var ImageBox = function(parent, config) {
 		this.insetBox.addEventListener("mouseover", function(event) { box.mouseOverHandler(); });
 		this.insetBox.addEventListener("mouseout",  function(event) { box.mouseOutHandler (); });
 		this.insetBox.addEventListener("mousemove", function(event) { box.mouseMoveHandler(event); });
+		
+		this.dummyImage = new Image();
+		this.dummyImage.src = this.elements[0];
+		this.dummyImage.addEventListener('load', function(e) { box.setupInsets(); });
+		if (this.dummyImage.complete)
+			this.setupInsets();
 	}
-	
-	this.dummyImage = new Image();
-	this.dummyImage.src = this.elements[0];
-	this.dummyImage.addEventListener('load', function(e) { box.setupInsets(); });
-	if (this.dummyImage.complete)
-		this.setupInsets();
 }
 
 ImageBox.prototype.setupInsets = function() {
