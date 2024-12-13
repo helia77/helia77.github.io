@@ -78,29 +78,20 @@
         "elements": [
           "index_files/sculpture.jpg",
           "index_files/sculpture_ours.jpg",
-          "index_files/sculpture_neus2.jpg",
-          "index_files/sculpture_gs.jpg",
         ],
-        "enableInsets": true,
+        "enableInsets": false,
         "insetSize": 3.25,
         "insetUnit": "em",
         "insetZoom": 1.5,
         "names": [
           "Reference",
           "Ours",
-          "NeuS2",
-          "Surfels"
         ],
         "title": "Images"
       },
     ];
 
     function setup() {
-      var content = document.getElementById("insets");
-      
-      for (var i = 0; i < imageBoxes.length; i++)
-        new ImageBox(content, imageBoxes[i]);
-
       $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});
     }
 
@@ -190,7 +181,6 @@
                 <div class="twentytwenty-frame-4" style="width: 29.9858px; height: 178.372px;"></div>
               </div>
             </div>
-            <div class="image-inset-container-empty"></div>
           </div>
 
           <div id="threed">
@@ -199,7 +189,7 @@
               <li class="selector" onclick="switchSrc(this, &#39;neus&#39;)">NeuS</li>
               <li class="selector" onclick="switchSrc(this, &#39;volsdf&#39;)">VolSDF</li>
             </ul>
-            <model-viewer src="supplement/bmvs/dog/mesh/ours.glb" shadow-intensity="1" camera-controls="" touch-action="pan-y" auto-rotate="" alt="ours" ar-status="not-presenting">
+            <model-viewer src="car.glb" shadow-intensity="1" camera-controls="" touch-action="pan-y" auto-rotate="" alt="ours" ar-status="not-presenting">
               <template shadowrootmode="open"><!---->
                 <style>
                   :host {
@@ -615,7 +605,7 @@
               });
 
               window.switchSrc = (element, name) => {
-                modelViewer.src = 'supplement/bmvs/dog/mesh/' + name + '.glb';
+                modelViewer.src = name + '.glb';
                 modelViewer.alt = name;
                 
                 const slides = document.querySelectorAll(".selector-3d .selector");
