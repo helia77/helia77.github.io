@@ -160,9 +160,9 @@
 
       <section>
         <h2 id="results">Visualization</h2>
-        <p>A visualization of all our 3D reconstruction results is available at the <a href="https://imaging.cs.cmu.edu/volumetric_opaque_solids/supplement/">interactive supplemental website</a>.</p>
 
         <div id="visualization">
+
           <div id="overlay">
             <div class="selector-group selector-empty"></div>
             <div class="twentytwenty-container twentytwenty-compare-4" style="max-width: 576px; height: 400px;">
@@ -183,11 +183,18 @@
             </div>
           </div>
 
+          <!-- ---------------------------------------------------------------------------------------------------- -->
+
           <div id="threed">
             <ul class="selector-group selector-3d">
-              <li class="selector active" onclick="switchSrc(this, &#39;ours&#39;)">Ours</li>
-              <li class="selector" onclick="switchSrc(this, &#39;neus&#39;)">NeuS</li>
-              <li class="selector" onclick="switchSrc(this, &#39;volsdf&#39;)">VolSDF</li>
+              <li class="selector active" onclick="switchSrc(this, &#39;ours&#39;)">Segmentation</li>
+              <li class="selector" onclick="switchSrc(this, &#39;neus&#39;)">Ground Centerline</li>
+              <li class="selector" onclick="switchSrc(this, &#39;volsdf&#39;)">Lee</li>
+              <li class="selector" onclick="switchSrc(this, &#39;volsdf&#39;)">Palagyi</li>
+              <li class="selector" onclick="switchSrc(this, &#39;volsdf&#39;)">Kline</li>
+              <li class="selector" onclick="switchSrc(this, &#39;volsdf&#39;)">Kerautret</li>
+              <li class="selector" onclick="switchSrc(this, &#39;volsdf&#39;)">Tagliasacchi</li>
+              <li class="selector" onclick="switchSrc(this, &#39;volsdf&#39;)">Slicer3D</li>
             </ul>
             <model-viewer src="car.glb" shadow-intensity="1" camera-controls="" touch-action="pan-y" auto-rotate="" alt="ours" ar-status="not-presenting">
               <template shadowrootmode="open"><!---->
