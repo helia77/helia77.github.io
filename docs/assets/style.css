@@ -127,3 +127,31 @@ a.item-title:hover {
   border-radius: 4px;
   display: inline-block;
 }
+
+
+a.certificate-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+}
+
+a.certificate-title:hover {
+  text-decoration: underline;
+}
+
+.certificate {
+  margin: 0 0 15px;
+  font-size: 15px;
+  color: #5c5c5c;
+}
+
+a.certificate {
+  font-size: 14px;
+  color: #1a73e8;
+  text-decoration: none; 
+}
+
+a.certificate:hover {
+  color: #0c4da2;
+}
