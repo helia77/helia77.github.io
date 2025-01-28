@@ -76,6 +76,15 @@ body {
 
 .d-flex.flex-column.pl-4 {
   line-height: 1.1;
+  padding-bottom: 0;
+}
+
+.d-flex.flex-column.pl-1 {
+  line-height: 1.25rem;
+}
+
+.d-flex.flex-row.pl-1 {
+  margin-bottom: 0.1rem; 
 }
 
 .d-flex.flex-column.pl-4 > * {
