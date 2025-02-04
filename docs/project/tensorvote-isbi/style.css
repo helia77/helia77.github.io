@@ -232,7 +232,7 @@ footer {
 	margin: 0 0 1em 1em;
 }
 
-#overlay, #insets {
+#overlay, #threed {
 	display: inline-block;
 	width: calc(49% - 0.5em);
 	margin: 0 0.25em 0 0.25em;
