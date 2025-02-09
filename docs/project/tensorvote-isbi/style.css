@@ -227,10 +227,10 @@ footer {
 }
 
 /* Custom visualization code */
-#visualization {
+/*#visualization {
 	width: calc(100% - 1em);
 	margin: 0 0 1em 1em;
-}
+}*/
 
 #overlay, #threed {
 	display: inline-block;
